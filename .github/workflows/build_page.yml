@@ -2,7 +2,7 @@ name: CI
 on: [push, pull_request]
 
 env:
-  MDBOOK_VERSION: 0.5.1
+  MDBOOK_VERSION: 0.5.2
 
 jobs:
   test:
@@ -20,8 +20,9 @@ jobs:
     - name: Install Rust
       run: |
         rustup set profile minimal
-        rustup toolchain install nightly -c rust-docs
-        rustup default nightly
+        # rustup toolchain install nightly -c rust-docs
+        # rustup default nightly
+        rustup default stable
 
     - name: Install mdbook
       run: |
@@ -48,5 +49,5 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: learn-rust-by-example/learn-rust-by-example
+        name: learn-rust-by-example
         path: book
