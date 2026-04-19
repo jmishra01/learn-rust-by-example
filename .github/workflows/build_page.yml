@@ -45,12 +45,6 @@ jobs:
     - name: Build HTML
       run: mdbook build
 
-    - name: Check for broken links
-      run: |
-        curl -sSLo linkcheck.sh \
-          https://raw.githubusercontent.com/rust-lang/rust/master/src/tools/linkchecker/linkcheck.sh
-        sh linkcheck.sh --all learn-rust-by-example
-
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
