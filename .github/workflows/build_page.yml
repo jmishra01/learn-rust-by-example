@@ -49,10 +49,10 @@ jobs:
       run: |
         curl -sSLo linkcheck.sh \
           https://raw.githubusercontent.com/rust-lang/rust/master/src/tools/linkchecker/linkcheck.sh
-        sh linkcheck.sh --all learn-rust-by-example
+        sh linkcheck.sh --all learn-rust-by-example/learn-rust-by-example
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: learn-rust-by-example
+        name: learn-rust-by-example/learn-rust-by-example
         path: book
