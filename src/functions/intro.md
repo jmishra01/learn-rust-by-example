@@ -1,11 +1,11 @@
 # Functions
 
 ## Intro
-Function is a block of code, mainly focus on single task.
-It can take input arguments, and return a value of certain types. Input arguments and return values is optional
+A function is a block of code that usually focuses on a single task.
+It can take input arguments and return a value of a specific type. Both input arguments and return values are optional.
 
-In Rust, you can define function with keyword `fn` followed by function name, and a set of parentheses.
-Curly brackets contain function body.
+In Rust, you define a function with the `fn` keyword, followed by the function name and a set of parentheses.
+Curly braces contain the function body.
 
 
 ```rust,editable

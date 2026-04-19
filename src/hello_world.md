@@ -1,6 +1,6 @@
 # Hello World!
 
-Print `Hello World!` text using `println!` function.
+Print the text `Hello World!` using the `println!` function.
 
 ```rust,editable
 fn main() {
@@ -8,16 +8,16 @@ fn main() {
 }
 ```
 
-Save text in the `hello.rs` file.
+Save the code in a file named `hello.rs`.
 
-To build `rs` file, use below command. This command create executable file with name `hello`.
+To build the Rust file, use the command below. It creates an executable named `hello`.
 ```bash
 rustc hello.rs
 ```
 
-To run executable file in linux, or mac use below command.
+To run the executable on Linux or macOS, use the command below.
 ```bash
 ./hello
 ```
 
-This command print `Hello World!`.
+This command prints `Hello World!`.

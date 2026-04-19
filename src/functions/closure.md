@@ -1,6 +1,6 @@
 # Closure
 
-Closure is an anonymous function that can `capture` variables from its surrounding environment.
+A closure is an anonymous function that can `capture` variables from its surrounding environment.
 
 ```rust,editable
 fn main() {
@@ -15,5 +15,4 @@ fn main() {
     println!("Area of cicle: {}", result);
 }
 ```
-
 

@@ -1,11 +1,11 @@
 # Trait
 
-Trait are used to define shared behaviour that different types can implement.
+Traits are used to define shared behavior that different types can implement.
 
 ## Without using trait
 
-Without using trait, each struct have to implement print_field method.
-As the number of struct increase, duplicate code increase.
+Without a trait, each struct has to implement the `print_field` method on its own.
+As the number of structs increases, the amount of duplicated code also increases.
 ```rust,editable
 struct Car {
     name: String
@@ -37,11 +37,9 @@ fn main() {
 ```
 
 ## Using trait
-Shared behavior (here `field` method), is implement by struct. 
-`show_field` implemented as function, which take two arguments,
-`name` and reference of `Machine`. Any struct which implement
-trait `Machine` method can pass as reference to the second 
-argument of `show_field` function.
+The shared behavior here is the `field` method, which is implemented by each struct.
+The `show_field` function takes two arguments: `name` and a reference to `Machine`.
+Any struct that implements the `Machine` trait can be passed as the second argument to `show_field`.
 
 ```rust,editable
 trait Machine {
