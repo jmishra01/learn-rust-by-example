@@ -2,3 +2,8 @@
 title = "Learn Rust By Example"
 authors = ["jitendramishra"]
 language = "en"
+
+[output.html.playpen]
+editable = true
+copy-js = true
+line-numbers = true

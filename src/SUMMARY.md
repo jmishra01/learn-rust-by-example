@@ -6,6 +6,7 @@
 - [Function](./functions/intro.md)
   - [Closure](./functions/closure.md)
 - [Trait](./trait/intro.md)
-- [PhantomData]()
+  - [From And Into](trait/from-and-into.md)
+- [PhantomData](./phantomdata/intro.md)
   - [Type-Level Safety](./phantomdata/type-level-safety.md)
   - [Lifetime](./phantomdata/lifetime.md)
